@@ -1,0 +1,29 @@
+{
+  "name": "react-app-with-backend-deployment",
+  "version": "1.0.0",
+  "description": "for learning deployment of react app with backend server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd first-app && npm run build && cd .. && nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepikabartwal/react-app-with-backend-deployment.git"
+  },
+  "author": "Deepika Bartwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepikabartwal/react-app-with-backend-deployment/issues"
+  },
+  "homepage": "https://github.com/deepikabartwal/react-app-with-backend-deployment#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "eslint": "^5.16.0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.0",
+    "nodemon": "^1.18.11",
+    "react-scripts": "^2.1.8"
+  }
+}

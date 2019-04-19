@@ -1,0 +1,33 @@
+main{
+  height:100%;
+  width:100%;
+  font-family: monospace;
+}
+body {
+  width: 100%;
+  height:100%;
+ display: flex;
+ justify-content: center;
+}
+
+.launch-button{
+  height: 50px;
+  width: 150px;
+  font-size: 100%;
+  border-radius: 5%;
+  background-color: green;
+  font-family: cursive;
+}
+
+.launching-platform{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.launched-missile-details{
+  font-family: cursive;
+  font-size:50px;
+}
