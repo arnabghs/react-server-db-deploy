@@ -9,10 +9,10 @@ app.use(express.static(__dirname + "/first-app/build"));
 const mysql = require("mysql");
 
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "naruto10",
-  database: "launch_missile"
+  host: "us-cdbr-iron-east-02.cleardb.net",
+  user: "b4eafaa18cd5ba",
+  password: "753c2f92",
+  database: "heroku_ded7d36eeae9208"
 });
 
 const launchMissile = function(req, res) {
@@ -27,7 +27,8 @@ const launchMissile = function(req, res) {
 };
 
 const getDetails = function(req, res) {
-  let q = "SELECT count,name,date_format(launched_at,'%D %M %Y ____ %r') AS date from users;";
+  let q =
+    "SELECT count,name,date_format(launched_at,'%D %M %Y ____ %r') AS date from users;";
   connection.query(q, function(err, result) {
     if (err) console.log(err);
     let details = result.map(detail => {

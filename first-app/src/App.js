@@ -40,9 +40,7 @@ class App extends Component {
   render() {
     return (
       <div className="launching-platform">
-        <div className="launched-missile-details">
-          Missile Launch Info :
-        </div>
+        <div className="launched-missile-details">Missile Launch Info :</div>
         <div>
           <form onSubmit={this.handleSubmit.bind(this)}>
             <label>
